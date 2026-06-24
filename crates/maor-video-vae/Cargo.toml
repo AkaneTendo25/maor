@@ -1,0 +1,13 @@
+[package]
+name = "maor-video-vae"
+version = "0.1.0"
+edition = "2021"
+license.workspace = true
+
+[dependencies]
+candle-core = { workspace = true }
+candle-nn = { workspace = true }
+maor-core = { path = "../maor-core" }
+maor-nn = { path = "../maor-nn" }
+serde_json = { workspace = true }
+anyhow = { workspace = true }

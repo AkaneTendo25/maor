@@ -1,0 +1,33 @@
+target/
+
+# Model weights
+models/
+*.safetensors
+*.bin
+*.gguf
+*.ggml
+*.pt
+*.pth
+*.onnx
+
+# Generated output
+outputs/
+
+# Environment and secrets
+.env
+.env.*
+credentials.json
+
+# Local workspace state
+.agents/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~

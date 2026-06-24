@@ -1,0 +1,10 @@
+[package]
+name = "maor-scheduler"
+version = "0.1.0"
+edition = "2021"
+license.workspace = true
+
+[dependencies]
+candle-core = { workspace = true }
+maor-core = { path = "../maor-core" }
+anyhow = { workspace = true }

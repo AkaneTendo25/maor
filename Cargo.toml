@@ -1,0 +1,33 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/maor-core",
+    "crates/maor-nn",
+    "crates/maor-transformer",
+    "crates/maor-video-vae",
+    "crates/maor-audio-vae",
+    "crates/maor-text-encoder",
+    "crates/maor-scheduler",
+    "crates/maor-pipeline",
+]
+
+[workspace.package]
+license = "MIT"
+
+[workspace.dependencies]
+candle-core = { git = "https://github.com/huggingface/candle.git", rev = "2bd0256aff1605b0514a68f4f38d833e1658f02f" }
+candle-nn = { git = "https://github.com/huggingface/candle.git", rev = "2bd0256aff1605b0514a68f4f38d833e1658f02f" }
+candle-transformers = { git = "https://github.com/huggingface/candle.git", rev = "2bd0256aff1605b0514a68f4f38d833e1658f02f" }
+safetensors = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+hound = "3.5"
+tokenizers = "0.20"
+rand = "0.8"
+rand_distr = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = "thin"

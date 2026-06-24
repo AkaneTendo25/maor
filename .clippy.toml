@@ -1,0 +1,2 @@
+# ML model constructors routinely take 8-12 config parameters.
+too-many-arguments-threshold = 12

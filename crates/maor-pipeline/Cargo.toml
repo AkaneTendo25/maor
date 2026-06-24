@@ -1,0 +1,27 @@
+[package]
+name = "maor-pipeline"
+version = "0.1.0"
+edition = "2021"
+license.workspace = true
+
+[features]
+cuda = ["candle-core/cuda", "candle-nn/cuda"]
+
+[dependencies]
+candle-core = { workspace = true }
+candle-nn = { workspace = true }
+maor-core = { path = "../maor-core" }
+maor-nn = { path = "../maor-nn" }
+maor-transformer = { path = "../maor-transformer" }
+maor-video-vae = { path = "../maor-video-vae" }
+maor-audio-vae = { path = "../maor-audio-vae" }
+maor-text-encoder = { path = "../maor-text-encoder" }
+maor-scheduler = { path = "../maor-scheduler" }
+safetensors = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+anyhow = { workspace = true }
+clap = { workspace = true }
+hound = { workspace = true }
+rand = { workspace = true }
+rand_distr = { workspace = true }
